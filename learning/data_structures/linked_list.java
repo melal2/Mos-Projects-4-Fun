@@ -51,8 +51,8 @@ public class linked_list {
 
         Collections.sort(luciousList, Collections.reverseOrder());
 
-        for (String i : luciousList) {
-            System.out.println(i);
+        for (String meow : luciousList) {
+            System.out.println(meow);
         }
     }
 }
