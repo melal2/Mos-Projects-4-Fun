@@ -6,16 +6,18 @@ public class arrayLoops {
         obj.loopArray();
         obj.forEachArray();
     }
-    public void loopArray(){
-        String[] cars = {"Bimmer", "Yotas", "Mazdas"};
+
+    public void loopArray() {
+        String[] cars = { "Bimmer", "Yotas", "Mazdas" };
         for (int i = 0; i < cars.length; i++) {
             System.out.println(cars[i]);
-          }
+        }
     }
-    public void forEachArray(){
-        String[] cars = {"Bimmer", "Yotas", "Mazdas"};
-        for (String i : cars){
+
+    public void forEachArray() {
+        String[] cars = { "Bimmer", "Yotas", "Mazdas" };
+        for (String i : cars) {
             System.out.println(i);
-        }           
+        }
     }
 }
