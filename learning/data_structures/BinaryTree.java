@@ -60,29 +60,34 @@ public class BinaryTree {
         else
             return searchRec(root.right, key);
     }
+
     public int findMin() {
         return findMinRec(root);
     }
-    private int findMinRec(Node root){
+
+    private int findMinRec(Node root) {
         if (root == null)
-        throw new IllegalStateException("Tree is empty");
+            throw new IllegalStateException("Tree is empty");
         if (root.left == null)
-        return root.key;
+            return root.key;
         return findMinRec(root.left);
     }
-    public int findMax(){
+
+    public int findMax() {
         return findMaxRec(root);
     }
+
     private int findMaxRec(Node root) {
         if (root == null)
-        throw new IllegalStateException("Tree is empty");
+            throw new IllegalStateException("Tree is empty");
         if (root.right == null)
-        return root.key;
+            return root.key;
         return findMinRec(root.right);
     }
+
     public static void main(String[] args) {
         BinaryTree tree = new BinaryTree();
-        
+
         tree.insert(50);
         tree.insert(30);
         tree.insert(20);
@@ -96,7 +101,7 @@ public class BinaryTree {
 
         int searchKey = 40;
         if (tree.search(searchKey))
-        System.out.println("\nKey " + searchKey + " found in the tree.");
+            System.out.println("\nKey " + searchKey + " found in the tree.");
 
         System.out.println("Minimum values in the tree " + tree.findMin());
         System.out.println("Maximum values in the tree " + tree.findMax());
