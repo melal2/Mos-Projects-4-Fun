@@ -1,4 +1,4 @@
-package data_structures;
+package learning.data_structures;
 
 public class arrayLoops {
     public static void main(String[] args) {

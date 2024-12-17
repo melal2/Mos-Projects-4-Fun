@@ -1,6 +1,12 @@
-package data_structures;
+package learning.data_structures;
    
 public class array {
+    public static void main(String[] args) {
+        array obj = new array();
+        obj.ArrayDisplay();
+        obj.ChangeArray();
+        obj.ArraySize();
+    }
      //How to create an array and replace an item in that array
     public void ChangeArray(){
         String[] cars2 = {"Bimmer", "Yotas", "Mazdas"};
@@ -17,12 +23,4 @@ public class array {
         String[] cars = {"Bimmer", "Yotas", "Mazdas"};
         System.out.println(cars.length);
     }
-    
-    public static void main(String[] args) {
-        array obj = new array();
-        obj.ArrayDisplay();
-        obj.ChangeArray();
-        obj.ArraySize();
-    }
-
 }
