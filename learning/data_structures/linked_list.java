@@ -10,6 +10,7 @@ public class linked_list {
         obj.linked_listFr();
         obj.linked_listSort();
         obj.linked_listSortButBackwards();
+        obj.linked_listAddingIndex();
     }
 
     public void linked_listFr() {
@@ -55,4 +56,15 @@ public class linked_list {
             System.out.println(meow);
         }
     }
+        // Adding index in this hoe
+        public void linked_listAddingIndex() {
+            LinkedList<String> luciousList = new LinkedList<String>();
+            luciousList.add("balls?");
+            luciousList.add("any questions?");
+            luciousList.add( "yumulus");
+            luciousList.add(3, "oiled up guy");
+            luciousList.add("guice");
+
+            System.out.println(luciousList);
+        }
 }
